@@ -1,0 +1,52 @@
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+config.local.json
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated binaries, models, tools and local backups
+/build/
+/build_release/
+/dist/
+/dist_release/
+/releases/
+/backups/
+/tmp/
+/models/
+/packaging/tools/
+*.exe
+*.dll
+*.zip
+*.7z
+*.bin
+
+# Recordings and runtime output
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.flac
+*.log
+*.jsonl
+*-self-test.json
+resultado.json
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

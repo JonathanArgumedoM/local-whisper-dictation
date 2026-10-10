@@ -1,0 +1,61 @@
+{
+  "transcription_provider": "local",
+  "openai": {
+    "model": "gpt-4o-mini-transcribe",
+    "response_format": "text",
+    "api_key_env": "OPENAI_API_KEY",
+    "timeout_seconds": 25,
+    "max_retries": 1
+  },
+  "model_size": "small",
+  "language": null,
+  "compute_type": "int8",
+  "device": "cpu",
+  "sample_rate": 16000,
+  "min_record_seconds": 0.35,
+  "hotkey": [
+    "ctrl",
+    "space"
+  ],
+  "toggle_double_tap_seconds": 0.55,
+  "paste_mode": "clipboard",
+  "prepend_space": false,
+  "append_space": true,
+  "status_beeps": true,
+  "preload_model": true,
+  "transcription": {
+    "beam_size": 1,
+    "vad_filter": true,
+    "condition_on_previous_text": false,
+    "initial_prompt": "This is bilingual Spanish and English dictation. Preserve natural Spanglish. Important vocabulary: TravelDesk, WooCommerce, WordPress, Laravel, Vue, comisión, reserva, reservación, booking, reservation, restaurant, transportation, tours."
+  },
+  "command_replacements": {
+    " nueva linea ": "\n",
+    " nueva línea ": "\n",
+    " new line ": "\n",
+    " punto ": ". ",
+    " period ": ". ",
+    " coma ": ", ",
+    " comma ": ", ",
+    " dos puntos ": ": ",
+    " colon ": ": ",
+    " abrir parentesis ": "(",
+    " open parenthesis ": "(",
+    " cerrar parentesis ": ")",
+    " close parenthesis ": ")",
+    " abrir paréntesis ": "(",
+    " cerrar paréntesis ": ")"
+  },
+  "protected_phrases": [
+    "punto de venta",
+    "puntos de venta"
+  ],
+  "custom_terms": {
+    "travel desk": "TravelDesk",
+    "traveldesk": "TravelDesk",
+    "word press": "WordPress",
+    "woo commerce": "WooCommerce"
+  },
+  "max_record_seconds": 45,
+  "enable_toggle_recording": false
+}
